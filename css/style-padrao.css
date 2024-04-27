@@ -118,7 +118,7 @@ i.bi-stickies {
 /* Usando media queries para transformar nossa page acessível a tela menores */
 @media screen and (max-width: 480px) {
   body {
-    width: 100%;
+    min-width: 480px;
   }
 
   header {
