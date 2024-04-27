@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+  font-family: 'Mukta', Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+#nome-empresa {
+  font-size: 40px;
+  color: orange;
+  text-shadow: 2px 2px black;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+/* estilização do home */
+.cabecalho {
+  width: 100%;
+  background-image: url(https://thumbs.dreamstime.com/b/esquina-de-comida-mexicanma-borde-arriba-abajo-vista-sobre-un-oscuro-fondo-banner-con-espacio-copia-la-est%C3%A1-en-parte-hacia-tacos-191566359.jpg)
+}
+
+.menu .ul-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.ul-menu li {
+  list-style: none;
+  padding: 2rem;
+  color: antiquewhite;
+}
+
+.bi-file-person {
+  font-size: 60px;
+  color: beige;
+}
+
+.bi-geo-alt-fill {
+  font-size: 60px;
+  color: beige;
+}
+
+.nome-localizacao {
+  font-size: 40px;
+  padding-left: 0;
+  padding-right: 5rem;
+  color: beige;
+}
+
+.bi-card-image {
+  font-size: 60px;
+  color: beige;
+}
+
+/* estilização do footer */
+.footer {
+  background-color: beige;
+  margin-top: 5rem;
+}
+
+.footer-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.footer-card li {
+  list-style: none;
+}
+
+.footer-card a {
+  text-decoration: none;
+  text-align: center;
+  color: black;
+}
+
+.footer-item {
+  margin: .5rem;
+}
+
+i.bi-house-door {
+  font-size: 60px;
+  color: orange;
+}
+
+i.bi-emoji-smile {
+  font-size: 60px;
+  color: orange;
+}
+
+i.bi-upc-scan {
+  font-size: 60px;
+  color: orange;
+}
+
+i.bi-cart {
+  font-size: 60px;
+  color: orange;
+}
+
+i.bi-stickies {
+  font-size: 60px;
+  color: orange;
+}
+
+.footer-nome-item {
+  font-size: 20px;
+  font-weight: 700;
+  color: grey;
+}
+
+/* Usando media queries para transformar nossa page acessível a tela menores */
+@media screen and (max-width: 480px) {
+  body {
+    width: 100%;
+  }
+
+  header {
+    display: flex;
+  }
+
+  i.bi-geo-alt,
+  .nome-localizacao,
+  i.bi-card-image {
+    display: none;
+  }
+
+  ul.footer-card {
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .footer-card a {
+    width: 100%;
+  }
+}
